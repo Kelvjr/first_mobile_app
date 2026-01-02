@@ -1,4 +1,4 @@
-import 'package:first_ecommerce/features/home/presentation/home_screen.dart';
+import 'package:first_ecommerce/app_start.dart';
 import 'package:first_ecommerce/core/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       title: '586Designs',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
-      home: HomeScreen(),
+      home: AppStart(),
     );
   }
 }
