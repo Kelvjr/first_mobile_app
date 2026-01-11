@@ -10,9 +10,27 @@ class AppTextStyles {
     color: AppColors.textColor,
   );
 
+  static const smText = TextStyle(
+    fontSize: 14,
+    fontFamily: 'Helvetica',
+    color: AppColors.borderColor,
+  );
+
+  static const bodylight = TextStyle(
+    fontSize: 18,
+    fontFamily: 'Helvetica',
+    color: AppColors.borderColor,
+  );
+
   static const headings = TextStyle(
     fontSize: 18,
     fontFamily: 'Helvetica',
     color: AppColors.headingColor,
+  );
+
+  static const onboardingTitle = TextStyle(
+    fontSize: 32,
+    fontFamily: 'Helvetica',
+    color: AppColors.bgColor,
   );
 }
