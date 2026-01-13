@@ -11,13 +11,19 @@ class AppTextStyles {
   );
 
   static const smText = TextStyle(
-    fontSize: 14,
+    fontSize: 12,
     fontFamily: 'Helvetica',
     color: AppColors.borderColor,
   );
 
   static const bodylight = TextStyle(
-    fontSize: 18,
+    fontSize: 16,
+    fontFamily: 'Helvetica',
+    color: AppColors.borderColor,
+  );
+
+  static const normallight = TextStyle(
+    fontSize: 16,
     fontFamily: 'Helvetica',
     color: AppColors.borderColor,
   );

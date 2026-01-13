@@ -1,6 +1,7 @@
 import 'package:first_ecommerce/core/theme/app_colors.dart';
 import 'package:first_ecommerce/core/theme/app_spacing.dart';
 import 'package:first_ecommerce/core/theme/app_text_styles.dart';
+import 'package:first_ecommerce/core/theme/button_styling.dart';
 import 'package:first_ecommerce/features/onboarding_1/data/onboarding_pages.dart';
 import 'package:flutter/material.dart';
 
@@ -45,18 +46,23 @@ class OnboardingUi extends StatelessWidget {
         Positioned(
           left: AppSpacing.hPadding(context),
           right: AppSpacing.hPadding(context),
-          bottom: MediaQuery.of(context).size.height * 0.075,
+          bottom: MediaQuery.of(context).size.height * 0.1,
           child: Column(
             children: [
-              Text(page.title, style: AppTextStyles.onboardingTitle),
-              AppSpacing.verticalMedium,
+              Text(
+                page.title,
+                style: AppTextStyles.onboardingTitle,
+                textAlign: TextAlign.center,
+              ),
+              AppSpacing.verticalLarge,
               Text(
                 page.description,
                 style: AppTextStyles.bodylight,
                 textAlign: TextAlign.center,
               ),
               AppSpacing.vXXL,
-              ElevatedButton(onPressed: onContinue, child: Text(buttonText)),
+
+              LargeButton(text: buttonText, onPressed: onContinue),
             ],
           ),
         ),
