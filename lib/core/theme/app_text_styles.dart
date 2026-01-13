@@ -22,10 +22,22 @@ class AppTextStyles {
     color: AppColors.borderColor,
   );
 
-  static const normallight = TextStyle(
-    fontSize: 16,
+  static const guest = TextStyle(
+    fontSize: 18,
     fontFamily: 'Helvetica',
     color: AppColors.borderColor,
+  );
+
+  static const normallight = TextStyle(
+    fontSize: 15,
+    fontFamily: 'Helvetica',
+    color: AppColors.borderColor,
+  );
+
+  static const signin = TextStyle(
+    fontSize: 15,
+    fontFamily: 'Helvetica',
+    color: AppColors.primaryColor,
   );
 
   static const headings = TextStyle(

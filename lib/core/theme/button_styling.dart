@@ -12,7 +12,7 @@ class LargeButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: MediaQuery.of(context).size.width * 0.9,
+      width: MediaQuery.of(context).size.width * 1,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primaryColor,
