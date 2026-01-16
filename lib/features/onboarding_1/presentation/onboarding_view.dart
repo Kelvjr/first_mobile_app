@@ -2,7 +2,7 @@ import 'package:first_ecommerce/core/theme/app_colors.dart';
 import 'package:first_ecommerce/core/theme/app_spacing.dart';
 import 'package:first_ecommerce/features/onboarding_1/data/onboarding_pages.dart';
 import 'package:first_ecommerce/features/onboarding_1/presentation/onboarding_ui.dart';
-import 'package:first_ecommerce/features/welcome/welcome_screen.dart';
+import 'package:first_ecommerce/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 

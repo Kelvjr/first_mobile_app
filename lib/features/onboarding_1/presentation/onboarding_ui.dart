@@ -1,7 +1,7 @@
 import 'package:first_ecommerce/core/theme/app_colors.dart';
 import 'package:first_ecommerce/core/theme/app_spacing.dart';
 import 'package:first_ecommerce/core/theme/app_text_styles.dart';
-import 'package:first_ecommerce/core/theme/button_styling.dart';
+import 'package:first_ecommerce/core/widgets/button_styling.dart';
 import 'package:first_ecommerce/features/onboarding_1/data/onboarding_pages.dart';
 import 'package:flutter/material.dart';
 

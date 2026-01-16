@@ -1,7 +1,9 @@
 import 'package:first_ecommerce/core/theme/app_colors.dart';
 import 'package:first_ecommerce/core/theme/app_spacing.dart';
 import 'package:first_ecommerce/core/theme/app_text_styles.dart';
-import 'package:first_ecommerce/core/theme/button_styling.dart';
+import 'package:first_ecommerce/core/widgets/button_styling.dart';
+import 'package:first_ecommerce/features/auth/presentation/login/login_screen.dart';
+import 'package:first_ecommerce/features/auth/presentation/signup/signup_screen.dart';
 import 'package:first_ecommerce/features/home/presentation/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -40,7 +42,15 @@ class WelcomeScreen extends StatelessWidget {
             bottom: MediaQuery.of(context).size.height * 0.1,
             child: Column(
               children: [
-                LargeButton(text: "Create an Account", onPressed: () {}),
+                LargeButton(
+                  text: "Create an Account",
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(builder: (context) => SignupScreen()),
+                    );
+                  },
+                ),
                 AppSpacing.verticalXLarge,
                 Row(
                   children: [
@@ -88,7 +98,17 @@ class WelcomeScreen extends StatelessWidget {
                       style: AppTextStyles.normallight,
                     ),
                     AppSpacing.horizontalMedium,
-                    Text('Sign In', style: AppTextStyles.signin),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => LoginScreen(),
+                          ),
+                        );
+                      },
+                      child: Text('Sign In', style: AppTextStyles.signin),
+                    ),
                   ],
                 ),
               ],

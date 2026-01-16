@@ -10,6 +10,30 @@ class AppTextStyles {
     color: AppColors.textColor,
   );
 
+  static const authOptions = TextStyle(
+    fontSize: 16,
+    fontFamily: 'Helvetica',
+    color: AppColors.primaryColor,
+  );
+
+  static const bodydark = TextStyle(
+    fontSize: 16,
+    fontFamily: 'Helvetica',
+    color: AppColors.headingColor,
+  );
+
+  static const meddark = TextStyle(
+    fontSize: 15,
+    fontFamily: 'Helvetica',
+    color: AppColors.headingColor,
+  );
+
+  static const authHint = TextStyle(
+    fontSize: 15,
+    fontFamily: 'Helvetica',
+    color: AppColors.textColor,
+  );
+
   static const smText = TextStyle(
     fontSize: 12,
     fontFamily: 'Helvetica',
@@ -42,6 +66,12 @@ class AppTextStyles {
 
   static const headings = TextStyle(
     fontSize: 18,
+    fontFamily: 'Helvetica',
+    color: AppColors.headingColor,
+  );
+
+  static const authHeading = TextStyle(
+    fontSize: 32,
     fontFamily: 'Helvetica',
     color: AppColors.headingColor,
   );

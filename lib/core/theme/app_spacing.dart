@@ -6,6 +6,7 @@ class AppSpacing {
   static const SizedBox verticalMedium = SizedBox(height: 8);
   static const SizedBox verticalLarge = SizedBox(height: 16);
   static const SizedBox verticalXLarge = SizedBox(height: 24);
+  static const SizedBox vAXL = SizedBox(height: 20);
   static const SizedBox vXXL = SizedBox(height: 36);
 
   // SizedBoxes for horizontal spacing
@@ -41,5 +42,13 @@ class AppSpacing {
   );
 
   static double hPadding(BuildContext context) =>
-      MediaQuery.of(context).size.width * 0.03;
+      MediaQuery.of(context).size.width * 0.05;
+
+  static double vPadding(BuildContext context) =>
+      MediaQuery.of(context).size.height * 0.03;
+
+  static EdgeInsets screenPadding(BuildContext context) => EdgeInsets.symmetric(
+    horizontal: hPadding(context),
+    vertical: vPadding(context),
+  );
 }
